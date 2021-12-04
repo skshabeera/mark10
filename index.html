@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+    <title>Cash register app</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <section class="content">
+          <h1>Cash Register Manager</h1>
+          <p>
+            Enter the bill amount and cash given by the customer and know
+            minimum number of notes to return.
+          </p>
+        </section>
+        <form id="bill-form">
+          <div class="form-group">
+            <label for="bill-amount">Bill Amount</label>
+            <input
+              type="text"
+              name="bill_amount"
+              id="bill-amount"
+              placeholder="0.0"
+              pattern="[0-9]+"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="cash-amount">Cash Amount</label>
+            <input
+              type="text"
+              name="cash_amount"
+              id="cash-amount"
+              placeholder="0.0"
+              pattern="[0-9]+"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <button type="submit">Check</button>
+          </div>
+        </form>
+        <p class="invalid-input">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, ex!
+        </p>
+        <section class="output">
+          <h2>Return Change</h2>
+          <table class="notes">
+            <tbody>
+              <tr id="note-values">
+                <th>no-of-notes</th>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>Notes</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
