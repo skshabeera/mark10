@@ -135,12 +135,12 @@
     border: 1px solid var(--primary-color);
     text-align: left;
     border-spacing: 0;
-  }
+}
   
   .notes tr > * {
     padding: 1rem;
     border: 1px solid var(--primary-color);
     font-size: 18px;
     width: 100px;
-  }
-  
+}
+
